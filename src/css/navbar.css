@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navArea{
+    background:rgb(217, 26, 50);
+    z-index: 10;
+    position: relative;
+    transition: 0.2s;
+    height: 12%;
+   }
+.navArea.active{
+    background:white;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+}
+.container-fluid .container .navbar-brand {
+      font-family: 'Parisienne', cursive;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #1A1108;
+  }
+  .container-fluid .container .navigation ul li{
+      display: inline-block;
+      margin-right: 15px;
+     
+  }
+  .navArea .container-fluid .container .navigation ul li .anchor{
+    color:black;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+  
+  }
+  .navArea .container-fluid .container .navigation ul li button{
+    color:rgb(217, 26, 50);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding: 5px 30px;
+    background: white;
+    border:none;
+    outline: none;
+    border-radius: 4px;
+  
+  }
+  .navArea.active .container-fluid .container .navigation ul li .anchor{
+    color:black;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  .navArea.active .container-fluid .container .navigation ul li button{
+    color:black;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding: 5px 30px;
+    background: rgb(217, 26, 50);
+    border:none;
+    outline: none;
+    border-radius: 4px;
+  
+  }
+  .container-fluid .container .navigation ul li .anchor:hover{
+    color: white;
+    
+  }
+  .container-fluid .container .navigation.active{
+    display: block;
+    position: absolute;
+    background:white;
+    width:100vw;
+    height: 100vh;
+    top:100%;
+    right: 0;
+    padding: 20px 70px;
+    transform: translateX(20px);
+    
+  }
+
+  .container-fluid .container .contact.active{
+    display:block;
+    background:white;
+    width: 80vw;
+    position: absolute;
+    height: 200px;
+    top: 340%;
+    left: 0;
+    z-index: 20;
+}
+  .container-fluid .container .navigation.active ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+  .container-fluid .container .contact.active ul li{
+    margin: 20px;
+}
+
+.container-fluid .container .navigation.active ul li .anchor{
+    width: 100%;
+    color:rgb(217, 26, 50);
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 20px;
+    margin:10px ;
+    font-weight: 800;
+  }
+  .navArea .container-fluid .container .navigation ul li .anchor img{
+    border:4px solid rgb(217, 26, 50);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  
+  }
+.container-fluid .container .contact.active ul li .anchor{
+    background:white;
+    color:black;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 20px;
+ 
+    z-index: 20;
+  }
+  .menu_bar .fa{
+    display: none;
+}
+.menu_bar{
+    width: 40px;
+    height:40px;
+    background: black;
+    display: none;
+}
+.menu_bar .png{
+    width: 100%;
+    height: 100%;
+    /* background: url('images/pic1.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    
+}
+.menu_bar.active .png{
+    width: 100%;
+    height: 100%;
+    /* background: url('/images/close.png'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    z-index: 20;
+}
+  .navArea .container-fluid .container .contact ul li{
+      display: inline-block;
+      margin-right: 20px;
+  }
+  .navArea .container-fluid .container .contact ul li .anchor{
+    color:#1A1108;
+    background: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  .navArea.active .container-fluid .container .contact ul li .anchor{
+    color:#1A1108;
+    background: rgb(217, 26, 50);
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  @media (max-width:500px){
+    .container-fluid .container .navigation{
+    display: none;
+ 
+        transition: 0.5s;
+    }
+    .container-fluid .container .contact{
+        display: none;
+      
+        transition: 0.5s;
+    }
+    .menu_bar .fa{
+        display: block;
+       
+    }
+    .content .heading {
+        background: black;
+        color: #F5F5F3;
+        z-index: 10;
+        font-size: 1rem;
+        text-transform: capitalize;
+        font-family: 'Great Vibes', cursive;
+        font-family: 'Prata', serif;
+        padding: 1px 24px;
+        border-radius: 10px;
+        /* display: none; */
+    }
+    .menu_bar{
+    
+        display: block;
+    }
+  }

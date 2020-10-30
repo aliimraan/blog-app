@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px;
+
+}
+.buttons button{
+    border: 4px solid rgb(217, 26, 50);
+    padding: 5px 30px;
+    margin: 10px;
+    background: rgb(217, 26, 50);
+    text-transform: capitalize;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.buttons button:hover{
+    background: white;
+    color: rgb(217, 26, 50);
+}

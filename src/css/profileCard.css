@@ -1,0 +1,560 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fullcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #f1f2f6;
+    flex-wrap: wrap;
+    position: relative;
+}
+.fullcard.active::after{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+}
+.fullcard .container .three_flex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap:30px;
+    padding: 50px 0;
+}
+.fullcard .container .three_flex .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   background: white;
+   padding: 10px;
+}
+.fullcard .container .three_flex .profile .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 130px;
+   height:130px;
+}
+.fullcard .container .three_flex .profile .image img{
+   width:100%;
+   height:100%;
+   border-radius: 50%;
+}
+.fullcard .container .three_flex .profile .name {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding:15px;
+   font-size: 1.4rem;
+   font-weight: 800;
+   text-transform: capitalize;
+   color: #4b6584;
+}
+.fullcard .container .three_flex .profile .about {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding:10px;
+   font-size: 1rem;
+   text-transform: capitalize;
+   color: #a5b1c2;
+   font-weight: 300;
+}
+.fullcard .container .three_flex .profile .member {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding:10px;
+   font-size: 1rem;
+   text-transform: capitalize;
+   background: #dff9fb;
+   color: #a5b1c2;
+   font-weight: 300;
+}
+.fullcard .container .three_flex .accDetails{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background: white;
+   width: 50%;
+}
+.fullcard .container .three_flex .accDetails .heading{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   background: #dff9fb;
+   padding: 10px;
+}
+.fullcard .container .three_flex .accDetails .heading h3{
+    font-size: 1rem;
+   text-transform: capitalize;
+   color: #a5b1c2;
+   font-weight: 300;
+}
+.fullcard .container .three_flex .accDetails .details{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap:9px 0;
+    background: white;
+    width: 100%;
+    padding: 20px 0;
+}
+.fullcard .container .three_flex .accDetails .details .names{
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px 0;
+}
+.fullcard .container .three_flex .accDetails .details .names .firstname,
+.fullcard .container .three_flex .accDetails .details .names .lastname{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: #4b6584;
+    
+}
+.fullcard .container .three_flex .accDetails .details .names .firstname span,
+.fullcard .container .three_flex .accDetails .details .names .lastname span{
+    font-size: 1rem;
+    text-transform: capitalize;
+    color:#718093;
+    
+}
+.fullcard .container .three_flex .accDetails .details .other{
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px 0;
+}
+.fullcard .container .three_flex .accDetails .details .other .email,
+.fullcard .container .three_flex .accDetails .details .other .phone{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: #4b6584;
+}
+.fullcard .container .three_flex .accDetails .details .other .email span,
+.fullcard .container .three_flex .accDetails .details .other .phone span{
+    font-size: 1rem;
+    text-transform: none;
+    color: #718093;
+}
+.fullcard .container .three_flex .actions{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 200px;
+    background: white;
+    padding: 10px;
+    
+}
+.fullcard .container .three_flex .actions .links{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+  
+   width: 100%;
+}
+.fullcard .container .three_flex .actions .links .attach{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding: 5px;
+    cursor: pointer;
+}
+.fullcard .container .three_flex .actions .links .attach .fa-pencil{
+    color:#487eb0;
+    border:2px solid #487eb0;
+    border-radius: 50%;
+    padding: 5px;
+}
+.fullcard .container .three_flex .actions .links .attach .fa-sign-out{
+    color:#e1b12c;
+    border:2px solid #e1b12c;
+    border-radius: 50%;
+    padding: 5px;
+}
+.fullcard .container .three_flex .actions .links .attach .fa-trash{
+    color:#c23616;
+    border:2px solid #c23616;
+    border-radius: 50%;
+    padding: 5px;
+}
+.fullcard .container .newRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    max-width:280px;
+}
+.fullcard .container .newRow .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+.fullcard .container .newRow .btns .posts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.fullcard .container .newRow .btns .posts .heading{
+   font-size: 1rem;
+    padding: 5px;
+    font-weight: 600;
+}
+.fullcard .container .newRow .btns .posts .articles{
+   font-size: 1.2rem;
+    padding: 5px 30px;
+    background: #dff9fb;
+}
+.fullcard .container .newRow .btns .addposts{
+    margin:15px 0;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  background: #dff9fb;
+}
+.fullcard .container .newRow .btns .addposts .anchor{
+   text-decoration: none;
+   font-size: 1.2rem;
+   color:black;
+   text-transform: uppercase;
+}
+.myPosts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    background: white;
+}
+.myPosts .main_area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    background: #dff9fb;
+}
+.myPosts .main_area .heading{
+    color: #a5b1c2;
+    color: #535c68;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.myPosts .main_area .fa{
+  color: #535c68;
+}
+.myPosts .allposts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    padding: 20px;
+}
+.myPosts .allposts.noactive{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    padding: 20px;
+    display: none;
+}
+.myPosts .allposts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    padding: 20px;
+}
+.myPosts .allposts .post_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #dff9fb;
+    border: 2px solid #dff9fb;
+    max-width: 200px ;
+}
+.myPosts .allposts .anchor{
+
+   color: black;
+}
+.myPosts .allposts .post_area .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+.myPosts .allposts .post_area .image img{
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+}
+.myPosts .allposts .post_area .title{
+    width: 100%;
+    padding:5px 10px;
+    text-transform: capitalize;
+    background: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.myPosts .allposts .post_area .body{
+    width: 100%;
+    padding:5px 10px;
+    text-transform: capitalize;
+    background: white;
+}
+.myPosts .allposts .post_area .btns{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   padding: 10px 0;
+}
+.myPosts .allposts .post_area .btns .fa-pencil{
+   font-size: 2rem;
+   color: #22a6b3;
+}
+.myPosts .allposts .post_area .btns .fa-trash{
+   font-size: 2rem;
+   color: #eb4d4b;
+}
+.editModel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background: white;
+    padding: 50px;
+    width: 800px;
+    transform: translateX(-50%);
+    transition: 0.5s ease;
+}
+.editModel.noactive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -200%;
+    left: 50%;
+    background: white;
+    padding: 50px;
+    width: 800px;
+    transform: translateX(-50%);
+    transition: 0.5s ease;
+}
+.editModel .editArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   width: 100%;
+}
+.editModel .editArea .heading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center ;
+    font-size: 2rem;
+    width: 100%;
+    font-weight: 700;
+    text-transform: capitalize;
+    word-spacing: 0.5rem;
+}
+.editModel .editArea form{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center ;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+}
+.editModel .editArea form .first{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 10px;
+    width: 100%;
+}
+.editModel .editArea form .first input{
+    color:white;
+}
+
+.editModel .editArea form .first .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    
+}
+.editModel .editArea form .first .image img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+.editModel .editArea form .fields{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+    gap: 0 20px;
+}
+.editModel .editArea form .fields{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+    gap: 0 20px;
+}
+.editModel .editArea form .fields .row1{
+    width: 50%;
+}
+.editModel .editArea form .fields .row1 input{
+    padding: 6px 0;
+    width: 100%;
+    border: 2px solid #dcdde1;
+    border-radius: 6px;
+}
+.editModel .editArea form .fields .row1 .labels{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.editModel .editArea form .fields .row1 .labels .label1{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.editModel .editArea form .fields .row1 .labels .label2{
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    color: #a5b1c2;
+}
+
+.editModel .editArea form .fields .row2{
+    width: 50%;
+}
+.editModel .editArea form .fields .row2 input{
+    padding: 6px 0;
+    width: 100%;
+    border: 2px solid #dcdde1;
+    border-radius: 6px;
+}
+.editModel .editArea form .fields .row2 .labels{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.editModel .editArea form .fields .row2 .labels .label1{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.editModel .editArea form .fields .row2 .labels .label2{
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    color: #a5b1c2;
+}
+.editModel .editArea form .btnz{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px 40px;
+    width: 100%;
+
+}
+.editModel .editArea form .btnz button{
+    padding: 6px 40px;
+    font-size:1.1rem;
+    font-weight: 800;
+    border:none;
+    outline: none;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+.editModel .editArea form .btnz button:hover{
+    transform: scale(1.2);
+}
+.editModel .editArea form .btnz .save{
+    background: #0097e6;
+}
+.editModel .editArea form .btnz .close{
+    background:#e84118;
+}
+@media(max-width:830px){
+    .editModel .editArea form .fields{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .editModel .editArea .heading{
+        display: flex;
+        justify-content:center;
+        align-items: center ;
+        font-size: 2rem;
+        width: 100%;
+        font-weight: 700;
+        text-transform: capitalize;
+        word-spacing: 0.5rem;
+    }
+    .editModel .editArea form .first{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0 10px;
+        width: 100%;
+       
+    }
+    .editModel{
+        width: auto;
+        
+    }
+    .editModel .editArea form .fields .row1,
+    .editModel .editArea form .fields .row2{
+        width: 90%;
+    }
+   
+    
+}

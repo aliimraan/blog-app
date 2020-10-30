@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.hero .container .heading {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.hero .container .heading h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    text-align: center;
+    margin: 30px 0;
+
+}
+.hero .container .photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+.hero .container .photo img{
+  
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.hero .container .info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background:#f1f2f6;
+  padding: 50px;
+  margin-top:-40% ;
+  z-index: 100;
+ }
+.hero .container .box .middile_desc{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.hero .container .info .topic{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.hero .container .info .desc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .container .info .desc p{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+@media (max-width:991px){
+    .hero .container .info{
+       
+        margin-top:-60% ;
+       }
+}
+@media (max-width:770px){
+    .hero .container .info{
+       
+        margin-top:0px;
+
+       }
+       .hero .container .box{
+           padding: 0px;
+           margin-bottom: 50px;
+       }
+       .hero .container .box .middile_desc{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+      }
+}
