@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw ;
+    height: 100vh;
+    background:white;
+    overflow-x: hidden;
+}
+.login .container .row .col-md-4, .login .container .row .col-md-6{
+    margin: 0;
+    padding: 0;
+}
+.login .container .row .col-md-4 .image{
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+.login .container .row .col-md-4 .image img{
+    width:100%;
+    height: 100%;
+}
+.login .container .row .col-md-4 .newlogin{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    /* text-transform: capitalize; */
+}
+.login .container .row .col-md-4 .newlogin button{
+    border: none;
+    outline: none;
+    padding: 5px 40px;
+    margin: 20px 0;
+    transition: 0.5s;
+}
+.login .container .row .col-md-4 .newlogin button:hover{
+   background: rgb(217, 26, 50);
+   color: white;
+   padding: 5px 50px;
+}
+.login .container .row .col-md-4 .newlogin .heading{
+   font-size: 1.8rem;
+}
+.login .container .row .col-md-6 {
+  background:#f5f6fa;
+}
+.login .container .row .col-md-6 .main_form .heading h1{
+    text-align: center;
+}
+.login .container .row .col-md-6 .main_form form{
+    padding: 10px;
+}
+.login .container .row .col-md-6 .main_form .f_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+}
+.login .container .row .col-md-6 .main_form .f_area input{
+    padding: 8px 30px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+}
+.login .container .row .col-md-6 .main_form .f_area input[type=file]{
+    margin-left: 20%;
+}
+.login .container .row .col-md-6 .main_form .f_area .intro textarea{
+    padding: 8px 30px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    resize: none;
+
+}
+.login .container .row .col-md-6 .main_form .f_area input::placeholder{
+   text-transform: capitalize;
+
+}
+.login .container .row .col-md-6 .main_form form button{
+    background:#ced6e0;
+    background:#dfe4ea;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    
+}
+.login .container .row .col-md-6 .main_form form button:hover{
+    background:rgb(217, 26, 50);
+    color: white;
+    border: none;
+}
