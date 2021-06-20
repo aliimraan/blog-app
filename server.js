@@ -16,12 +16,6 @@ mongoose.connect(URL,{
  .then(()=>console.log('db connected'))
  .catch(err=>console.log('not connected'+err))
 
- 
-
-
-app.get('/',(req,res)=>{
-    res.send('hello from node js')
-})
 
 app.use('/public',express.static('public'))
 app.use(bodyparser.json())
